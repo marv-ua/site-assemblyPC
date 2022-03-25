@@ -8,6 +8,7 @@ html, body{
     font-weight: normal;
     color: #FFFFFF;
     background-image: linear-gradient(to right top, #060606, #050504, #030303, #020201, #000000);
+    font-family: Roboto, sans-serif;
 }
 
 img {
@@ -48,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translate(-50% 0);
+    transform: translate(-50%, 0);
     width: 100%;
     padding: 4rem 11rem 4rem 8rem;
     z-index: 10;
