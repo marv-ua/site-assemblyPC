@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-display__button {
-    background: linear-gradient(94.78deg #DF5950 11.19% #451046 93.72%);  
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);  
     font-size: 1.6rem; 
 }
 
