@@ -81,7 +81,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__button {
-    margin-left: 55.3rem; 
+    /*margin-left: 55.3rem; */
+    margin-left: 3%;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);   
     font-size: 1.6rem;
 }
