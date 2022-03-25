@@ -61,6 +61,17 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
+.header__logo {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
 .header__nav a:not(:last-child) {   /*внутри все элементы кроме последней*/
     margin-left: 7.1rem;
 }
@@ -69,30 +80,19 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.6rem;
 }
 
-.header__menu {
-    display: flex;
-    align-items: center;
-}
-
-.header__logo {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-}
-
 .header__button {
     margin-left: 55.3rem; 
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);   
     font-size: 1.6rem;
 }
 
+.main-display {
+    padding-top: 27rem;
+}
+
 .main-display .container {
     position: relative;
     z-index: 10;
-}
-
-.main-display {
-    padding-top: 27rem;
 }
 
 .main-display__background {
@@ -109,8 +109,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-display__header {
     max-width: 76rem; 
-    margin-bottom: 6.4rem;
-    font-size: 6.4rem;    
+    margin-bottom: 5rem;
+    font-size: 6.4rem;  
 }
 
 .main-display__timer {
