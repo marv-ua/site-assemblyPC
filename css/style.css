@@ -4,7 +4,8 @@
 
 html, body{
     /*своего рода переназначение единицы рем с 16 пх на 10 пх*/
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-family: Roboto400, Roboto, sans-serif;
     font-size: 62.5%;   /*браузер по умолчанию имеет размер 16пх, дальше будем работать с ед. изм. рем - этой настройкой сбразываем начальное значение 16*0.625=10*/
     font-weight: normal;
     color: #FFFFFF;
@@ -252,4 +253,18 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     line-height: 160%;
     opacity: 0.5;    
+}
+
+@font-face {
+    font-family: "Roboto400";
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto700";
+    src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
 }
