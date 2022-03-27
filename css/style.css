@@ -39,7 +39,17 @@ h1, h2, h3, h4, h5, h6 {
 .container {
     width: 130rem;
     margin: 0 auto;
-    padding-bottom: 22.8rem;
+}
+
+:root {
+    --text-size-medium: 1.6rem;
+}
+
+.block__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
 }
 
 .button {
@@ -80,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header__nav a {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 400;
     line-height: 150%;
 }
@@ -89,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     /*margin-left: 55.3rem; */
     margin-left: 3%;
     background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);   
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 700;
     line-height: 150%;    
 }
@@ -101,6 +111,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-display .container {
     position: relative;
     z-index: 10;
+    padding-bottom: 22.8rem;
 }
 
 .main-display__background {
@@ -112,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-display__button {
     background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);  
-    font-size: 1.6rem; 
+    font-size: var(--text-size-medium); 
     font-weight: 400;
     line-height: 150%;    
 }
@@ -133,10 +144,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 10.2rem;
     height: 11.2rem;
     background-color: #121212;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; */
     margin-bottom: 7.6rem;
 }
 
@@ -151,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .timer__text {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 400;
     line-height: 140%;    
     opacity: 0.4;
@@ -187,7 +198,7 @@ h1, h2, h3, h4, h5, h6 {
 .work__description {
 
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;    
 }
 
@@ -199,9 +210,15 @@ h1, h2, h3, h4, h5, h6 {
 .process__img {
     width: 9rem;
     height: 4.5rem;
+    margin-right: 2rem;
+}
+
+.process .process__img {
+    transform: rotate(45deg);
 }
 
 .process__header {
+    padding-top: 1rem;
     margin-bottom: 4.9rem;
     font-weight: 700;
     font-size: 4.8rem;
@@ -216,7 +233,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 41.1rem;
     margin-bottom: 8rem;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: 0.5;
 }
@@ -253,6 +270,116 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.4rem;
     line-height: 160%;
     opacity: 0.5;    
+}
+
+.command__title {
+    margin-bottom: 11.9rem;
+}
+
+.command__header {
+    margin-bottom: 0;
+}
+
+.command {
+    padding-bottom: 20rem;
+}
+
+.command__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 11rem;
+    padding-right: 11rem;
+}
+
+/* .command__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.command__img {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+    border-radius: 50%;
+}
+
+.command__name {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 140%;    
+}
+.command__proffesion {
+    margin-bottom: 3rem;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.command__link {
+    border: 1px solid #FFFFFF;
+    font-weight: 400;
+    font-size: var(--text-size-medium);
+    line-height: 150%; 
+}
+
+.assembly {
+    padding-bottom: 24.2rem;
+}
+
+/* .assembly__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+} */
+
+.assembly__header {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;   
+}
+
+.assempbly__description {
+    margin-bottom: 4.52rem;
+    font-weight: 400;
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+    opacity: 0.5;
+}
+
+.assembly__button{
+    margin-bottom: 5.08rem;
+    font-weight: 700;
+    font-size: var(--text-size-medium);
+    line-height: 150%; 
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+
+.assembly__socials {
+    display: flex;   
+}
+
+.assembly__item {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.assembly__item:not(:last-child){
+    margin-right: 3rem;
+}
+
+.assembly__item img {
+    width: 50%;
+    height: 50%;
 }
 
 @font-face {
